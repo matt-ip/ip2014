@@ -6,9 +6,9 @@ angular.module('app', []).
       when('/', {controller:WebsiteCtrl, templateUrl:'list.html'}).
 	  when('/project/:projectId', {
             controller:ProjectCtrl,
-            templateUrl:'/details.html'
+            templateUrl:'details.html'
       }).
-      when('/contact/', {templateUrl:'/contact.html'}).
+      when('/contact/', {templateUrl:'contact.html'}).
       otherwise({redirectTo:'/'});
 
 
