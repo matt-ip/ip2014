@@ -1,0 +1,8 @@
+<div class="panel">
+    <div class="article" ng-repeat="project in projects | filter:{active:true} | orderBy: 'id':true | limitTo:9">
+        <div class='title'>
+            <h3>{{project.project_name}}</h3>
+        </div>
+        <a ng-href='#/project/{{project.url_name}}'><img ng-src='{{project.image}}' alt='{{project.project_name}}' /></a>
+    </div>
+</div>
