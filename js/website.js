@@ -15,14 +15,14 @@ angular.module('app', []).
   });
 
 function WebsiteCtrl($scope, $http) {
-    $http.get('/json/projects.json')
+    $http.get('/ip2014/json/projects.json')
         .then(function(res){
             $scope.projects  = res.data;
         });
 }
 
 function ProjectCtrl($scope, $routeParams, $http) {
-    $http.get('/json/projects.json').success(function(data){
+    $http.get('json/projects.json').success(function(data){
         angular.forEach(data, function(project) {
             if (project.url_name == $routeParams.projectId)
                 $scope.project = project;
