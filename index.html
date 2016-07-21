@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html id="ng-app" ng-app="app" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content="Front End Development & Consultancy London, UK. " />
+    <title>Ironpanda. Front End Development & Consultancy London, UK.</title>
+
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <!--[if lte IE 8]>
+    <script src="/js/json3.min.js"></script>
+    <![endif]-->
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lte IE 8]>
+    <script>
+        document.createElement('ng-include');
+        document.createElement('ng-pluralize');
+        document.createElement('ng-view');
+        document.createElement('ng-repeat');
+        document.createElement('ng:include');
+        document.createElement('ng:pluralize');
+        document.createElement('ng:view');
+        document.createElement('ng:repeat');
+    </script>
+    <![endif]-->
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.1.4/angular.min.js"></script>
+    <script src="js/website.js"></script>
+
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu+Condensed' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
+</head>
+<body ng-cloak>
+
+<div id="wrapper">
+    <header class="clearfix">
+        <h1><a ng-href="/#/">Ironpanda. Front end development. London UK.</a></h1>
+    </header>
+    <section>
+        <div id="contentWrap" class="clearfix">
+            <nav class="clearfix">
+                <ul>
+                    <li><a id="port" ng-href="/#/">Portfolio.</a></li>
+                    <li><a id="cont" ng-href="/#/contact">Contact.</a></li>
+                </ul>
+            </nav>
+            <div class="clearfix" ng-view ng-animate="{enter: 'view-enter', leave: 'view-leave'}"></div>
+        </div><!-- #contentWrap -->
+    </section>
+    <footer>
+        &copy; 2014 Ironpanda Limited.
+    </footer>
+</div>
+
+<script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-28202700-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+</script>
+</body>
+</html>
